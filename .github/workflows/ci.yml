@@ -44,10 +44,10 @@ jobs:
       - name: Install CPU-only PyTorch + dependencies
         run: |
           pip install --upgrade pip
-          pip install torch==2.1.2 torchvision==0.16.2 
+          pip install torch==2.1.2 torchvision==0.16.2 \
             --index-url https://download.pytorch.org/whl/cpu
-          pip install scikit-learn numpy scipy Pillow 
-            opencv-python-headless tqdm matplotlib seaborn 
+          pip install scikit-learn numpy scipy Pillow \
+            opencv-python-headless tqdm matplotlib seaborn \
             pytest pytest-timeout
       - run: pip install -r requirements.txt
       - run: pip install --force-reinstall "numpy<2"
