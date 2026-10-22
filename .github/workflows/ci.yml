@@ -20,9 +20,9 @@ jobs:
         run: pip install flake8
       - name: Run flake8 (errors only — no style warnings)
         run: |
-          flake8 src/ tests/ 
-            --max-line-length=120 
-            --select=E9,F8,W6 
+          flake8 src/ tests/ \
+            --max-line-length=120 \
+            --select=E9,F8,W6 \
             --exclude=__pycache__,.git
 
   test:
