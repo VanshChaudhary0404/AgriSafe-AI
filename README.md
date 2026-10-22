@@ -1,4 +1,4 @@
-# 🌿 CropGuard AI
+# 🌿 Agrisafe AI
 
 > Explainable deep learning for automated crop disease classification and treatment recommendation.
 
