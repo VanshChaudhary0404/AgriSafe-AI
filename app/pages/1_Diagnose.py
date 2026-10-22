@@ -1,5 +1,5 @@
 """
-CropGuard AI — Diagnose Page
+AgriSafe AI — Diagnose Page
 """
 from __future__ import annotations
 import io, sys, tempfile, os
@@ -25,7 +25,7 @@ from src.severity import estimate_severity, severity_to_colour, severity_bar_lab
 from src.treatment import get_treatment
 
 # ─────────────────────────────────────────────────────────────────────────────
-st.set_page_config(page_title="Diagnose | CropGuard AI", page_icon="🔬", layout="wide")
+st.set_page_config(page_title="Diagnose | AgriSafe AI", page_icon="🔬", layout="wide")
 inject_css()
 
 hero(
@@ -379,20 +379,20 @@ with right:
 # ── Download ──────────────────────────────────────────────────────────────────
 treatment_text = get_treatment(pred_name, severity_stage=sev_stage if not is_healthy else "Early")
 report_text = (
-    f"CropGuard AI — Diagnostic Report\n{'='*50}\n"
+    f"AgriSafe AI — Diagnostic Report\n{'='*50}\n"
     f"Predicted Disease : {pred_disp}\n"
     f"Confidence        : {confidence*100:.1f}%\n"
     f"Severity          : {sev_pct:.1f}% ({sev_stage})\n\n"
     f"Treatment:\n{treatment_text}\n\n"
     "Top 3 Predictions:\n"
     + "\n".join([f"  {i+1}. {CLASS_DISPLAY[idx]} — {probs[idx]*100:.2f}%" for i, idx in enumerate(top3_idx)])
-    + "\n\n— Crafted by Hafiz Shahim Abdullah · Abubakar Shahid · Wajid Hussain Khan"
+    + "\n\nProject Team: Vansh Chaudhary · Aarnav Arora"
 )
 
 st.download_button(
     "⬇ Download Diagnostic Report",
     data=report_text,
-    file_name="cropguard_report.txt",
+    file_name="agrisafe_diagnostic_report.txt",
     mime="text/plain",
 )
 

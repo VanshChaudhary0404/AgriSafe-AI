@@ -705,7 +705,7 @@ _FOOTER_HTML = """
   <div class="footer-item">✦ Deep Learning </div>
 </div>
 <div class="credits">
-  <div class="credits-label">Original Project Contributors</div>
+  <div class="credits-label">Project Team</div>
   <div class="credits-names">
     Vansh Chaudhary
     <span class="credits-sep">·</span>
@@ -750,7 +750,7 @@ def hero(
                 <div class="hero-title">{title}</div>
                 <div class="hero-subtitle">{subtitle}</div>
                 <div class="byline">
-                  Original project contributors:
+                  Project Team:
                   <b>Vansh Chaudhary</b>
                   <span class="sep">·</span>
                   <b>Aarnav Arora</b>

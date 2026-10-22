@@ -1,6 +1,6 @@
 
 """
-CropGuard AI — Analytics Page
+AgriSafe AI — Analytics Page
 """
 from __future__ import annotations
 import sys
@@ -25,7 +25,7 @@ from src.utils import (
     get_train_transform, get_val_test_transform, denormalize,
 )
 
-st.set_page_config(page_title="Analytics | CropGuard AI", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Analytics | AgriSafe AI", page_icon="📊", layout="wide")
 inject_css()
 
 # Matplotlib theme: warm ivory, forest green, sage and gold

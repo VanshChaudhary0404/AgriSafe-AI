@@ -1,4 +1,5 @@
-name: CropGuard AI — CI
+name: AgriSafe AI — CI
+
 on:
   push:
     branches: [main, develop]
@@ -19,9 +20,9 @@ jobs:
         run: pip install flake8
       - name: Run flake8 (errors only — no style warnings)
         run: |
-          flake8 src/ tests/ \
-            --max-line-length=120 \
-            --select=E9,F8,W6 \
+          flake8 src/ tests/ 
+            --max-line-length=120 
+            --select=E9,F8,W6 
             --exclude=__pycache__,.git
 
   test:
@@ -43,16 +44,16 @@ jobs:
       - name: Install CPU-only PyTorch + dependencies
         run: |
           pip install --upgrade pip
-          pip install torch==2.1.2 torchvision==0.16.2 \
+          pip install torch==2.1.2 torchvision==0.16.2 
             --index-url https://download.pytorch.org/whl/cpu
-          pip install scikit-learn numpy scipy Pillow \
-            opencv-python-headless tqdm matplotlib seaborn \
+          pip install scikit-learn numpy scipy Pillow 
+            opencv-python-headless tqdm matplotlib seaborn 
             pytest pytest-timeout
       - run: pip install -r requirements.txt
       - run: pip install --force-reinstall "numpy<2"
       - name: Run tests
         run: |
-          python -m pytest tests/ -v \
-            --tb=short \
-            --timeout=120 \
+          python -m pytest tests/ -v 
+            --tb=short 
+            --timeout=120 
             -x

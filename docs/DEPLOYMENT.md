@@ -1,4 +1,4 @@
-# CropGuard AI — Deployment Guide
+# AgriSafe AI — Deployment Guide
 
 ## Local Development
 

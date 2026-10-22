@@ -1,4 +1,4 @@
-# CropGuard AI — Results
+# AgriSafe AI — Results
 
 ## Phase-by-Phase Performance
 
@@ -68,9 +68,9 @@ All results: mean ± std over 3 random seeds (42, 123, 777).
 | Ashurov et al. (2025) | Depthwise+SE | 91.2% | 0.897 |
 | Saranya et al. (2025) | CBAM+GradCAM | 92.8% | 0.908 |
 | Rahman et al. (2025) | PLA-ViT | 95.4% | 0.941 |
-| **CropGuard AI (Ours)** | ResNet50+CBAM+VAE+HPO | **≥94.0%** | **≥0.910** |
+| **AgriSafe AI (Ours)** | ResNet50+CBAM+VAE+HPO | **≥94.0%** | **≥0.910** |
 
-CropGuard AI uniquely addresses the Potato Healthy class imbalance (F1: 0.000 → ≥0.700)
+AgriSafe AI uniquely addresses the Potato Healthy class imbalance (F1: 0.000 → ≥0.700)
 through VAE augmentation — a problem not addressed in any cited baseline.
 
 ## Efficiency

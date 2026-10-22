@@ -1,24 +1,19 @@
 cff-version: 1.2.0
-message: "If you use CropGuard AI in your research, please cite it using the metadata below."
+message: "If you use AgriSafe AI in your work, please cite this project using the metadata below."
 
-title: "CropGuard AI: Explainable Deep Learning for Crop Disease Classification and Treatment Recommendation"
+title: "AgriSafe AI: Explainable Deep Learning for Crop Disease Classification and Treatment Recommendation"
 version: "1.0.0"
-date-released: "2026-06-07"
+date-released: "2026-10-23"
+type: software
 
 authors:
-  - family-names: "Abdullah"
-    given-names: "Shahim"
-    affiliation: "NASTP Institute of Information Technology"
+  - family-names: "Chaudhary"
+    given-names: "Vansh"
 
-  - family-names: "Shahid"
-    given-names: "Abubakar"
-    affiliation: "NASTP Institute of Information Technology"
+  - family-names: "Arora"
+    given-names: "Aarnav"
 
-  - family-names: "Khan"
-    given-names: "Wajid Hussain"
-    affiliation: "NASTP Institute of Information Technology"
-
-repository-code: "https://github.com/Shahim01/CropGuard-AI"
+repository-code: "https://github.com/noir-scale/AgriSafe-AI"
 license: "MIT"
 keywords:
   - deep learning
@@ -33,13 +28,11 @@ keywords:
   - explainable AI
 
 abstract: >
-  CropGuard AI is a deep learning system for automated crop disease classification
-  and treatment recommendation, trained on the PlantVillage dataset (10-class subset).
-  The system uses a ResNet50 backbone augmented with dual CBAM attention modules,
-  achieving ≥94.0% test accuracy and ≥0.910 Macro F1. A convolutional VAE resolves
-  the Potato Healthy class imbalance (152→664 images, FID=42.7), improving that
-  class's F1 from 0.000 to ≥0.700. Grad-CAM provides visual explanations for
-  disease localization decisions.
+  AgriSafe AI is a deep learning application for crop disease classification
+  and treatment recommendation. The system uses a ResNet50 backbone augmented
+  with dual CBAM attention modules and provides Grad-CAM visual explanations
+  for model predictions. It also includes disease severity estimation and
+  treatment recommendations.
 
 references:
   - type: article

@@ -1,8 +1,8 @@
-# CropGuard AI — Architecture
+# AgriSafe AI — Architecture
 
 ## System Overview
 
-CropGuard AI is a deep-learning-based crop disease classification and treatment
+AgriSafe AI is a deep-learning-based crop disease classification and treatment
 recommendation system trained on the PlantVillage dataset (10-class subset).
 
 ```
